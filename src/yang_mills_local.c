@@ -114,7 +114,6 @@ void real_main(char *in_file)
        if(count % param.d_measevery ==0 && count >= param.d_thermal)
          {
          perform_measures_localobs(&GC, &geo, &param, datafilep);
-        //  perform_measures_localobs(&GC, &geo, &param, datafilep, monofilep);
          perform_measure_u1subg(&GC, &geo, &param);
          }
 

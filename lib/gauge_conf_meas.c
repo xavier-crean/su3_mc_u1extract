@@ -832,49 +832,6 @@ void perform_measures_localobs(Gauge_Conf const * const GC,
      fprintf(datafilep, "\n");
    #endif
    fflush(datafilep);
-
-   // // monopole observables
-   // if(param->d_mon_meas == 1)
-   //   {
-   //   #if STDIM==4
-   //   int subg, subgnum;
-   //   Gauge_Conf helperconf;
-
-   //   init_gauge_conf_from_gauge_conf(&helperconf, GC, param);
-   //   alloc_diag_proj_stuff(&helperconf, param);
-
-   //   // MAG gauge fixing
-   //   max_abelian_gauge_fix(&helperconf, geo, param);
- 
-   //   //diagonal projection
-   //   diag_projection(&helperconf, param);
-   
-   //   //loop on all the U(1) subgroups
-   //   if(NCOLOR>1)
-   //     {
-   //     subgnum=NCOLOR-1;
-   //     }
-   //   else
-   //     {
-   //     subgnum=1;
-   //     }
-   //   for(subg=0; subg<subgnum; subg++)
-   //      {
-   //      // extract the abelian component subg and save it to GC->u1_subg
-   //      U1_extract(&helperconf, param, subg);
-
-   //      // compute monopole observables
-   //      monopoles_obs(&helperconf, geo, param, subg, monofilep);
-   //      }
-
-   //   free_diag_proj_stuff(&helperconf, param);
-   //   free_gauge_conf(&helperconf, param);
-
-   //   fflush(monofilep);
-   //   #else
-   //   (void) monofilep;
-   //   #endif
-   //   }
    }
 
 
