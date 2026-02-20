@@ -149,12 +149,7 @@ $\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$ only 3 are independent:
 - exchange $F_{\mu\nu}F_{\rho\sigma} \to F_{\rho\sigma}F_{\mu\nu}$ 
 - remaining permutations of indices: e.g 0123, 0213, 0312
 
-thus 
-$$\frac{1}{32} \epsilon_{\mu\nu\rho\sigma}Tr(F_{\mu\nu}F_{\rho\sigma})
-
- =-\frac{1}{32} \cdot \frac{1}{2^5} \cdot 2^3 \cdot [ \text{sum on independent permutations of } \epsilon_{\mu\nu\rho\sigma} ReTr(Q_{\mu\nu}[Q_{\rho\sigma}-Q_{\rho\sigma}^{\dag}]) ]
-  
- =-\frac{1}{128} [ \text{sum on independent permutations of } \epsilon_{\mu\nu\rho\sigma} ReTr(Q_{\mu\nu}[Q_{\rho\sigma}-Q_{\rho\sigma}^{\dag}]) ]$$
+thus $$\frac{1}{32} \epsilon_{\mu\nu\rho\sigma}Tr(F_{\mu\nu}F_{\rho\sigma}) \\ =-\frac{1}{32} \cdot \frac{1}{2^5} \cdot 2^3 \cdot [ \text{sum on independent permutations of } \epsilon_{\mu\nu\rho\sigma} ReTr(Q_{\mu\nu}[Q_{\rho\sigma}-Q_{\rho\sigma}^{\dag}]) ] \\ =-\frac{1}{128} [ \text{sum on independent permutations of } \epsilon_{\mu\nu\rho\sigma} ReTr(Q_{\mu\nu}[Q_{\rho\sigma}-Q_{\rho\sigma}^{\dag}]) ]$$
 
 This is the expression used in the code.
 
