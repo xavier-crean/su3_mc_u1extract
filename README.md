@@ -17,7 +17,7 @@ To configure the program, use
 
     ./configure
 
-See [configuration options](#other-configuration-parameters) below.
+See [configuration options](#configuration-parameters) below.
 
 To build the program, use
 
@@ -99,7 +99,7 @@ Defining the macro `DEBUG` several sanity checks are activated, while the macros
 
 ## Input file and some conventions
 
-A template input file is created when calling executables without input file and everything following `#` (up to carriage return) in the input file is interpreted as a comment.
+A template input file `template_input.in` is created when calling executables without input file and everything following `#` (up to carriage return) in the input file is interpreted as a comment.
 
 Some conventions used in the code are the following:
 
