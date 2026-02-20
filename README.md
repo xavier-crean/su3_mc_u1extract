@@ -52,14 +52,14 @@ The update is performed by means of heatbath and overrelaxation updates (and in 
 
 In `yang_mills_local_fundadj`, the action is
 
-$$-\beta (1/N) \sum_{\text{plaquettes}} Re(Tr(\text{plaquette})) 
--\text{adj} \beta (1/(N^2 -1)) \sum_{\text{plaquettes}} Tr_{\text{adj}}(\text{plaquette})$$
+$$-\beta \frac{1}{N} \sum_{\text{plaquettes}} Re(Tr(\text{plaquette})) 
+-\beta_{\text{adj}} \frac{1}{N^2 -1} \sum_{\text{plaquettes}} Tr_{\text{adj}}(\text{plaquette})$$
 
 and $Tr_\text{adj}=|Tr_\text{fund}|^2-1$.
 
 In `yang_mills_higgs`, the action is 
 
-$$-\beta (1/N)\sum_{\text{plaquettes}} Re(Tr(\text{plaquette})) 
+$$-\beta \frac{1}{N} \sum_{\text{plaquettes}} Re(Tr(\text{plaquette})) 
 -N_{\text{higgs}} \beta_\text{higgs} \sum_{r, \mu} \sum_{i=1}^{N_\text{higgs}} Re([H_r^{(i)}]^{\dag} U_{r, \mu} H_{r+\mu}^{(i)} )$$
 
 where the sum on $\mu$ is just on positive orientations and Higgs fields are normalized according to
