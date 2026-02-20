@@ -1,6 +1,9 @@
+# Simplicity of confinement in SU(3) Yang-Mills theory — Monte Carlo Code
+
 # Program for simulation of lattice Yang-Mills theories
 
 ## Contents
+- [Simplicity of confinement in SU(3) Yang-Mills theory — Monte Carlo Code](#simplicity-of-confinement-in-su3-yang-mills-theory--monte-carlo-code)
 - [Program for simulation of lattice Yang-Mills theories](#program-for-simulation-of-lattice-yang-mills-theories)
   - [Contents](#contents)
   - [Installation](#installation)
@@ -8,7 +11,7 @@
   - [Configuration parameters](#configuration-parameters)
   - [Input file and some conventions](#input-file-and-some-conventions)
   - [A note on topological charge](#a-note-on-topological-charge)
-  - [Abelian projection for $SU(3)$ lattice gauge theory](#abelian-projection-for-su3-lattice-gauge-theory)
+  - [Abelian projection for SU(3) lattice gauge theory](#abelian-projection-for-su3-lattice-gauge-theory)
 
 ## Installation
 
@@ -154,11 +157,11 @@ thus $$\frac{1}{32} \epsilon_{\mu\nu\rho\sigma}Tr(F_{\mu\nu}F_{\rho\sigma}) \\ =
 
 This is the expression used in the code.
 
-## Abelian projection for $SU(3)$ lattice gauge theory
+## Abelian projection for SU(3) lattice gauge theory
 
-A small section of the codebase has been modified to facilitate integration with an analysis pipeline specified by the repository [Simplicity of confinement in SU(3) Yang-Mills $−$ Analysis Code](https://github.com/xavier-crean/su3_mon):
+A small section of the codebase has been modified to facilitate integration with an analysis pipeline specified by the repository [Simplicity of confinement in SU(3) Yang-Mills — Analysis Code](https://github.com/xavier-crean/su3_mon):
 - [`src/yang_mills_local.c`](src/yang_mills_local.c) has been modified to include the function [`perform_measure_u1subg()`](src/yang_mills_local.c#L23) which calls a function [`U1_extract()`](src/yang_mills_local.c#L56).
-- [`lib/gauge_conf_meas.c`](lib/gauge_conf_meas.c) has been to modified so that [`U1_extract()`](lib/gauge_conf_meas.c#1459) prints the two $U(1)$-sector configurations to respective binary data files.
+- [`lib/gauge_conf_meas.c`](lib/gauge_conf_meas.c) has been to modified so that [`U1_extract()`](lib/gauge_conf_meas.c#L1459) prints the two $U(1)$-sector configurations to respective binary data files.
 - respective header files have been modified accordingly.
 ---
 
