@@ -64,7 +64,7 @@ and $Tr_\text{adj}=|Tr_\text{fund}|^2-1$.
 In `yang_mills_higgs`, the action is 
 
 $$-\beta \frac{1}{N} \sum_{\text{plaquettes}} Re(Tr(\text{plaquette})) 
--N_{\text{higgs}} \beta_\text{higgs} \sum_{r, \mu} \sum_{i=1}^{N_\text{higgs}} Re([H_r^{(i)}]^{\dag} U_{r, \mu} H_{r+\mu}^{(i)} )$$
+-N_{\text{higgs}} \beta_\text{higgs} \sum_{r, \mu} \sum_{i=1}^{N_\text{higgs}} Re([H_r^{(i)}]^{\dagger} U_{r, \mu} H_{r+\mu}^{(i)} )$$
 
 where the sum on $\mu$ is just on positive orientations and Higgs fields are normalized according to
 
@@ -139,11 +139,11 @@ $$Q_{\mu\nu}  \sim 4 + 4 i a^2 F_{\mu\nu}$$
 
 and thus
 
-$$F_{\mu\nu} = \frac{1}{8i}( Q_{\mu\nu} - Q_{\mu\nu}^{\dag} )$$
+$$F_{\mu\nu} = \frac{1}{8i}( Q_{\mu\nu} - Q_{\mu\nu}^{\dagger} )$$
 
 By using this expression we get
 
-$$Tr(F_{\mu\nu}F_{\rho\sigma}) = -\frac{1}{2^5} ReTr(Q_{\mu\nu}[Q_{\rho\sigma}-Q_{\rho\sigma}^{\dag}])$$
+$$Tr(F_{\mu\nu}F_{\rho\sigma}) = -\frac{1}{2^5} ReTr(Q_{\mu\nu}[Q_{\rho\sigma}-Q_{\rho\sigma}^{\dagger}])$$
 
 We now note that of the 24 terms
 $\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$ only 3 are independent:
@@ -153,7 +153,7 @@ $\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$ only 3 are independent:
 - exchange $F_{\mu\nu}F_{\rho\sigma} \to F_{\rho\sigma}F_{\mu\nu}$ 
 - remaining permutations of indices: e.g 0123, 0213, 0312
 
-thus $$\frac{1}{32} \epsilon_{\mu\nu\rho\sigma}Tr(F_{\mu\nu}F_{\rho\sigma}) \\ =-\frac{1}{32} \cdot \frac{1}{2^5} \cdot 2^3 \cdot [ \text{sum on independent permutations of } \epsilon_{\mu\nu\rho\sigma} ReTr(Q_{\mu\nu}[Q_{\rho\sigma}-Q_{\rho\sigma}^{\dag}]) ] \\ =-\frac{1}{128} [ \text{sum on independent permutations of } \epsilon_{\mu\nu\rho\sigma} ReTr(Q_{\mu\nu}[Q_{\rho\sigma}-Q_{\rho\sigma}^{\dag}]) ]$$
+thus $$\frac{1}{32} \epsilon_{\mu\nu\rho\sigma}Tr(F_{\mu\nu}F_{\rho\sigma}) \\ =-\frac{1}{32} \cdot \frac{1}{2^5} \cdot 2^3 \cdot [ \text{sum on independent permutations of } \epsilon_{\mu\nu\rho\sigma} ReTr(Q_{\mu\nu}[Q_{\rho\sigma}-Q_{\rho\sigma}^{\dagger}]) ] \\ =-\frac{1}{128} [ \text{sum on independent permutations of } \epsilon_{\mu\nu\rho\sigma} ReTr(Q_{\mu\nu}[Q_{\rho\sigma}-Q_{\rho\sigma}^{\dagger}]) ]$$
 
 This is the expression used in the code.
 
